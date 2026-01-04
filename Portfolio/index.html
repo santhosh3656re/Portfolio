@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Santhosh S</title>
+    <link rel="icon" type="image/png" href="c:\Users\santh\OneDrive\Gambar\picofme.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#coding-profiles" class="nav-link">Profiles</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="nav-details-btn" class="nav-cta-button">Details</button>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Hero + About Me Page -->
+    <section id="hero" class="page-section active">
+        <div class="gradient-blur gradient-1"></div>
+        <div class="gradient-blur gradient-2"></div>
+        <div class="gradient-blur gradient-3"></div>
+        
+        <div class="hero-content-new">
+            <div class="hero-text-new">
+                <h1 class="hero-title-new animate-fade-in">
+                    Hi, I'm <span class="name-highlight">Santhosh S</span>
+                </h1>
+                <p class="hero-subtitle-new animate-fade-in-delay">AI&DS Student | Full-Stack Developer | Creative Problem Solver</p>
+                <div class="hero-description">
+                    <p>I'm a passionate full-stack developer with expertise in creating beautiful, functional, and user-centered digital experiences. With a keen eye for design and a love for clean code, I bring ideas to life through innovative solutions.</p>
+                    <p>I am passionate about learning new technologies, solving problems, and building useful applications through continuous learning and hands-on experience. Driven by curiosity and a strong desire to grow, I aim to create innovative, real-world solutions using technology.</p>
+                </div>
+                <div class="hero-social-links">
+                    <a href="https://github.com/santhosh3656re" target="_blank" class="hero-social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/santhosh3656" target="_blank" class="hero-social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/santo_s/" target="_blank" class="hero-social-link" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://www.instagram.com/santhoo._/?hl=en" target="_blank" class="hero-social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-content animate-slide-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Introduction</h3>
+                        <p>I'm a passionate full-stack developer with expertise in creating beautiful, functional, and user-centered digital experiences. With a keen eye for design and a love for clean code, I bring ideas to life through innovative solutions.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Profession</h3>
+                
+                        <p>AI and Data Science Student | Exploring Java and Web Development | Passionate About Real-World Tech Applications | Creative Problem Solver </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>🚀 Participated in [Smart India Hackethon]</li>
+                            <li>🏆 Practical Cyber Security for Cybe Security Practitioners - [ NPTEL ]</li>
+                            <li>⭐ (HSC) - 89.1%</li>
+                            <li>⭐ (SSLC) - 78.2%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resume Page -->
+    <section id="resume" class="page-section">
+        <div class="gradient-blur gradient-5"></div>
+        <div class="resume-content">
+            <h2 class="section-title animate-fade-in">My Resume</h2>
+            <div class="resume-card-container">
+                <div class="resume-card">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Download Resume</h3>
+                    <p>Get a detailed overview of my experience, skills, and achievements</p>
+                    <a href="#" class="resume-download-btn" id="resume-download">
+                        <span>Download PDF</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Page -->
+    <section id="projects" class="page-section">
+        <div class="gradient-blur gradient-6"></div>
+        <div class="projects-content">
+            <h2 class="section-title animate-fade-in">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h3>Face Detection Door Lock Agent</h3>
+                            <p>Engineered a face recognition door lock system for real-time identity verification and accesscontrol</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h3>Online Voting System</h3>
+                            <p>Implemented a secure Online Voting System with Max Heap for real-time leaderboardmanagement</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h3>Placement Data Analysis & Prediction</h3>
+                            <p>Developed a placement prediction system using data analysis and machine learning modelsto identify key factors influencing placements.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h3>Company Performance Dashboard</h3>
+                            <p>Built a company performance dashboard to monitor sales and operational metrics.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Page -->
+    <section id="skills" class="page-section">
+        <div class="gradient-blur gradient-7"></div>
+        <div class="skills-content">
+            <h2 class="section-title animate-fade-in">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="50"></div>
+                    </div>
+                    <span class="skill-percentage">50%</span>
+                </div>
+               
+                
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="50"></div>
+                    </div>
+                    <span class="skill-percentage">50%</span>
+                </div>
+                
+        </div>
+    </section>
+
+  
+
+  
+    <!-- Coding Profiles Page -->
+    <section id="coding-profiles" class="page-section">
+        <div class="gradient-blur gradient-10"></div>
+        <div class="profiles-content">
+            <h2 class="section-title animate-fade-in">Coding Profiles</h2>
+            <div class="profiles-grid">
+                <a href="https://github.com/santhosh3656re" target="_blank" class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>View my code repositories and contributions</p>
+                    <div class="profile-stats">
+                        <span>GitHub</span>
+                        <br>
+                        <span>My Profile</span>
+                        
+                    </div>
+                </a>
+                <a href="https://leetcode.com/u/santo_s/" target="_blank" class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p>Algorithm and data structure solutions</p>
+                    <div class="profile-stats">
+                        <span>Leetcode</span>
+                        <span>My Profile</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/santhosh3656/" target="_blank" class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Professional network and career updates</p>
+                    <div class="profile-stats">
+                        <span>LinkedIn</span>
+                        <span>My Profile</span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/santhoo._/" target="_blank" class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Tech insights and developer community</p>
+                    <div class="profile-stats">
+                        <span>Instagram</span>
+                        <span>My Profile</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+      <!-- Contact Page -->
+    <section id="contact" class="page-section">
+        <div class="gradient-blur gradient-8"></div>
+        <div class="contact-content">
+            <h2 class="section-title animate-fade-in">Get In Touch</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Subject</label>
+                    <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="form-error"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            <div class="form-success" id="form-success">
+                <i class="fas fa-check-circle"></i>
+                <p>Message sent successfully!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="social-section">
+        <div class="social-content">
+            <p class="copyright">&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Resume Preview Modal -->
+    
